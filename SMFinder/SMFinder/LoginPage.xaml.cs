@@ -12,9 +12,7 @@ namespace SMFinder
     public partial class MainPage : ContentPage
     {
         Label instruct;
-        Image logo;
-        Frame welcomeFrame, timeFrame, credFrame, entryFrame;
-        Entry name, surname, phoneNum, email;
+        Frame entryFrame;
         public MainPage()
         {
             StackLayout st = new StackLayout();
@@ -153,7 +151,7 @@ namespace SMFinder
 
         private void LogoBtn_Tapped(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

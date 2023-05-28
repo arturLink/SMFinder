@@ -1,10 +1,13 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace SMFinder
 {
-    internal class UserRepository
+    public class UserRepository
     {
+        SQLiteConnection conn;
+
     }
 }

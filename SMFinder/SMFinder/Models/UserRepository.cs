@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SMFinder
+namespace SMFinder.Models
 {
     public class UserRepository
     {

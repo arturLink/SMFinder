@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using SQLite;
 
-namespace SMFinder
+namespace SMFinder.Models
 {
     [Table("Users")]
     public class User
@@ -17,6 +17,6 @@ namespace SMFinder
         public string PhoneNumber { get; set; }
         public string Trait1 { get; set; }
         public string Trait2 { get; set; }
-        public string Trait3 { get; set;}
-    }    
+        public string Trait3 { get; set; }
+    }
 }

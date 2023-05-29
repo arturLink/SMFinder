@@ -149,9 +149,12 @@ namespace SMFinder
             logoBtn.Tapped += LogoBtn_Tapped;
         }
 
-        private void LogoBtn_Tapped(object sender, EventArgs e)
+        private async void LogoBtn_Tapped(object sender, EventArgs e)
         {
-            
+            User user = new User();
+            CharPage charPage = new CharPage();
+            charPage.BindingContext = user;
+            await Navigation.PushAsync(charPage);
         }
     }
 }

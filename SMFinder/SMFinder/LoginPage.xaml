@@ -3,22 +3,90 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SMFinder.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+    <StackLayout BackgroundColor="Pink">
+        <Frame BorderColor="PaleVioletRed"
+           BackgroundColor="LightPink"
+           CornerRadius="5"
+           HasShadow="True"
+           Margin="3"
+           Padding="3">
+            <Label Text="Welcome!"
+               BackgroundColor="LightPink"
+               TextColor="DarkRed"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+
+        <Frame BorderColor="PaleVioletRed"
+           BackgroundColor="LightPink"
+           CornerRadius="5"
+           HasShadow="True"
+           Margin="3"
+           Padding="3">
+            <Label Text="Time to Find Your Soulmate!"
+               BackgroundColor="LightPink"
+               TextColor="DarkRed"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+        </Frame>
+
+        <Frame BorderColor="PaleVioletRed"
+           BackgroundColor="LightPink"
+           CornerRadius="5"
+           HasShadow="True"
+           Margin="3"
+           Padding="3">
+            <Label Text="Lets Begin With the Boring part!&#x0a;Please Enter Your Credentials!"
+               BackgroundColor="LightPink"
+               TextColor="DarkRed"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+        </Frame>
+
+        <Frame BorderColor="PaleVioletRed"
+           BackgroundColor="LightPink"
+           CornerRadius="5"
+           HasShadow="True"
+           Margin="3"
+           Padding="3">
+            <StackLayout>
+                <Label Text="Name"/>
+                <Entry TabIndex="0"
+                   Text="{Binding Name}" />
+                <Label Text="Second Name"/>
+                <Entry TabIndex="1"
+                   Text="{Binding SecondName}" />
+                <Label Text="Phone Number"/>
+                <Entry TabIndex="2"
+                   Text="{Binding PhoneNumber}" />
+                <Label Text="Email"/>
+                <Entry TabIndex="3"
+                   Text="{Binding Email}" />
+            </StackLayout>
+        </Frame>
+
+        <Label x:Name="instruct"
+           Text="Press the Big Heart button below to continue"
+           TextColor="DarkRed"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           FontSize="13" />
+
+
+        <Image Source="pngheartLogo.png">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="SaveData" />
+            </Image.GestureRecognizers>
+        </Image>
     </StackLayout>
 
 </ContentPage>
